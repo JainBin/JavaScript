@@ -1,0 +1,46 @@
+﻿/*
+	動態視窗樣式檔
+*/
+
+/* 動態視窗主體 */
+.DynamicWindowStyle
+{
+	position: fixed;
+	left: 1px;
+	z-index: 101;
+	background-color: #FFFFFF;
+	display: none;
+	padding: 10px;
+	margin: 1px;
+	border: 2px;
+	border-color: #000000;
+}
+
+/* 全景遮罩 */
+.DynamicWindowMask
+{
+	position: absolute;
+	background-color: #999999;
+	z-index: 100;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+/* 全景遮罩普指定遮罩範圍的滑鼠游標是手指 */
+.DynamicWindowMaskOnSetCursor
+{
+	position: absolute;
+	background-color: #999999;
+	z-index: 100;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	display: none;
+	cursor:pointer;
+}

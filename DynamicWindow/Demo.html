@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<script type="text/javascript" src="i_jquery.js"></script>
+	<script type="text/javascript" src="i_DynamicWindow_1.2.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		<!--
+
+		// 動態視窗個體
+		var oDW = new oDynamicWindow("ProductList.html");
+
+		// 自訂跳頁
+		function DWJumpPage(nPageNo, strQuery) {
+			oDW.JumpPage(nPageNo, strQuery);
+		}
+
+		// 自訂開啟視窗
+		function OpenDynamicWindow() {
+			oDW.OpenDynamicWindow(0, '');
+		}
+
+		// 自訂關閉視窗
+		function CloseDynamicWindow() {
+			oDW.onHidenWindow();
+		}
+
+		//-->
+	</script>
+
+	<input type="button" value="Show Product List" onclick="OpenDynamicWindow()" />
+
+</body>
+</html>
